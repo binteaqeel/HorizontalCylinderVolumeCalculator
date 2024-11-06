@@ -28,15 +28,14 @@
                             </select>                            
                         </div><br>
                         <div class="form-group">    
-                            <input type="number" class="form-control" id="filledDepth" placeholder="Enter Filled Depth (f)">
-                        </div><br>
-                        <div class="form-group">    
                             <input type="number" class="form-control" id="diameter" placeholder="Enter Diameter (d)">
                         </div><br>
                         <div class="form-group">
                             <input type="number" class="form-control" id="length" placeholder="Enter Length (l)">
                         </div><br>
-
+                        <div class="form-group">    
+                            <input type="number" class="form-control" id="filledDepth" placeholder="Enter Filled Depth (f)">
+                        </div><br>
                         <div class="flexContainer">
                             <div class="form-group">
                                 <button class="btn btn-success" onclick="calculateVolume()" style="width: 100%;">Calculate</button>
@@ -109,7 +108,7 @@
         }
     
         function resetValues() {
-            document.getElementById("length").value = '';
+            document.getElementById("filledDepth").value = '';
             document.getElementById("totalCapacity").innerText = '';
             document.getElementById("filledVolume").innerText = '';
         }
